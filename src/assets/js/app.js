@@ -16,3 +16,26 @@ import './lib/foundation-explicit-pieces';
 import './lib/slick.min.js';
 
 $(document).foundation();
+
+let sliderNew = $('.ba-slider-new');
+
+sliderNew.slick({
+	rows: 2,
+	slidesPerRow: 2,
+	dots: true,
+	responsive: [
+		{
+		  breakpoint: 1280,
+		  settings: {
+			slidesPerRow: 1		  
+			}
+		},
+		{
+		  breakpoint: 640,
+		  settings: {
+			slidesPerRow: 2
+		  }
+		}
+		
+	 ]
+})

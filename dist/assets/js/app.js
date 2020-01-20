@@ -12430,6 +12430,23 @@ window.jQuery = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; // require('found
 
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
+var sliderNew = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.ba-slider-new');
+sliderNew.slick({
+  rows: 2,
+  slidesPerRow: 2,
+  dots: true,
+  responsive: [{
+    breakpoint: 1280,
+    settings: {
+      slidesPerRow: 1
+    }
+  }, {
+    breakpoint: 640,
+    settings: {
+      slidesPerRow: 2
+    }
+  }]
+});
 
 /***/ }),
 
