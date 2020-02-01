@@ -2,20 +2,20 @@ import $ from 'jquery';
 
 import { Foundation } from 'foundation-sites/js/foundation.core';
 import * as CoreUtils from 'foundation-sites/js/foundation.core.utils';
-// import { Box } from 'foundation-sites/js/foundation.util.box'
+import { Box } from 'foundation-sites/js/foundation.util.box'
 // import { onImagesLoaded } from 'foundation-sites/js/foundation.util.imageLoader';
 import { Keyboard } from 'foundation-sites/js/foundation.util.keyboard';
 import { MediaQuery } from 'foundation-sites/js/foundation.util.mediaQuery';
 // import { Motion, Move } from 'foundation-sites/js/foundation.util.motion';
 // import { Nest } from 'foundation-sites/js/foundation.util.nest';
 // import { Timer } from 'foundation-sites/js/foundation.util.timer';
-// import { Touch } from 'foundation-sites/js/foundation.util.touch';
+import { Touch } from 'foundation-sites/js/foundation.util.touch';
 import { Triggers } from 'foundation-sites/js/foundation.util.triggers';
 // import { Abide } from 'foundation-sites/js/foundation.abide';
 // import { Accordion } from 'foundation-sites/js/foundation.accordion';
 // import { AccordionMenu } from 'foundation-sites/js/foundation.accordionMenu';
 // import { Drilldown } from 'foundation-sites/js/foundation.drilldown';
-// import { Dropdown } from 'foundation-sites/js/foundation.dropdown';
+import { Dropdown } from 'foundation-sites/js/foundation.dropdown';
 // import { DropdownMenu } from 'foundation-sites/js/foundation.dropdownMenu';
 // import { Equalizer } from 'foundation-sites/js/foundation.equalizer';
 // import { Interchange } from 'foundation-sites/js/foundation.interchange';
@@ -43,7 +43,7 @@ Foundation.addToJquery($);
 // Foundation.RegExpEscape = CoreUtils.RegExpEscape;
 // Foundation.onLoad = CoreUtils.onLoad;
 
-// Foundation.Box = Box;
+Foundation.Box = Box;
 // Foundation.onImagesLoaded = onImagesLoaded;
 Foundation.Keyboard = Keyboard;
 Foundation.MediaQuery = MediaQuery;
@@ -62,7 +62,7 @@ MediaQuery._init();
 // Foundation.plugin(Accordion, 'Accordion');
 // Foundation.plugin(AccordionMenu, 'AccordionMenu');
 // Foundation.plugin(Drilldown, 'Drilldown');
-// Foundation.plugin(Dropdown, 'Dropdown');
+Foundation.plugin(Dropdown, 'Dropdown');
 // Foundation.plugin(DropdownMenu, 'DropdownMenu');
 // Foundation.plugin(Equalizer, 'Equalizer');
 // Foundation.plugin(Interchange, 'Interchange');

@@ -69,12 +69,13 @@ $global-font-size: 16px;
 $global-width: 1200px;
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #F19D21,
-  secondary: #767676,
+  primary: #ffd88c,
+  secondary: #636262,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
+$dark-primary-color: #f19d21;
 $light-gray: #DFDFDF;
 $medium-gray: #999999;
 $dark-gray: #7F7979;
@@ -169,8 +170,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: $black;
+$anchor-color-hover: $dark-primary-color;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -280,14 +281,14 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // 11. Button
 // ----------
 
-$button-font-family: inherit;
-$button-padding: 17.4px 29px ;
+$button-font-family: $header-font-family;
+$button-padding: 17px 40px ;
 $button-margin: 0;
 $button-fill: solid;
 $button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
-$button-color-alt: $black;
+$button-background-hover: $dark-primary-color;
+$button-color: $black;
+$button-color-alt: $white;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
@@ -300,7 +301,7 @@ $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+$button-transition: background-color 0.25s ease-out, color 0.25s ease-out, border-color 0.25s ease-out, box-shadow 0.25s ease-out;
 $button-responsive-expanded: false;
 
 // 12. Button Group
@@ -415,7 +416,7 @@ $fieldset-border: 1px solid $medium-gray;
 $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
-$form-spacing: rem-calc(16);
+$form-spacing: rem-calc(23);
 $helptext-color: $black;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
@@ -433,14 +434,14 @@ $select-radius: $global-radius;
 $input-color: $black;
 $input-placeholder-color: #7c8791;
 $input-font-family: inherit;
-$input-font-size: rem-calc(14);
+$input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
 $input-line-height: $global-lineheight;
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid $primary-color;
+$input-border: 1px solid #DFDFDF;
+$input-border-focus: 1px solid $black;
 $input-padding: $form-spacing / 2;
 $input-shadow: none;
 $input-shadow-focus: none;

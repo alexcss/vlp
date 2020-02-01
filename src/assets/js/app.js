@@ -13,7 +13,8 @@ window.jQuery = $;
 // the line below
 import './lib/foundation-explicit-pieces';
 
-import './lib/slick.min.js';
+// import './lib/slick.min.js';
+import slick from 'slick-carousel';
 
 $(document).foundation();
 
@@ -27,7 +28,8 @@ sliderNew.slick({
 		{
 		  breakpoint: 1280,
 		  settings: {
-			slidesPerRow: 1		  
+				rows: 2,
+				slidesPerRow: 1		  
 			}
 		},
 		{

@@ -39,3 +39,37 @@
 		flex-grow: 1;
 	}	
 }
+
+.ba-event{
+	&__title{
+
+	}
+
+	&__link{
+		position: relative;
+		z-index: 1;
+		margin-left: 40px;
+		display: block;
+		overflow: hidden;
+		img{
+			display: block;
+			width: 100%;
+
+			transition: transform 0.3s;
+		}
+
+		&:hover{
+			img{
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	&__body{
+		position: relative;
+		z-index: 2;
+		background: rgba(#fff, 0.8);
+		margin-top: -80px;
+		padding: 10px 15px;
+	}
+}
