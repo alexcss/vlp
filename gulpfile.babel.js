@@ -103,6 +103,8 @@ function sass() {
     .pipe(browser.reload({ stream: true }));
 }
 
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+
 let webpackConfig = {
   mode: (PRODUCTION ? 'production' : 'development'),
   module: {
@@ -116,11 +118,21 @@ let webpackConfig = {
             compact: false
           }
         }
-      }
+		},
+		{
+			test: /\.vue$/,
+			loader: 'vue-loader'
+		}
     ]
   },
+  plugins: [
+	// убедитесь что подключили плагин!
+		new VueLoaderPlugin()
+  ],
   devtool: !PRODUCTION && 'source-map'
 }
+
+
 
 // Combine JavaScript into one file
 // In production, the file is minified
@@ -172,7 +184,7 @@ function watch() {
   gulp.watch('src/data/**/*.{js,json,yml}').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/helpers/**/*.js').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
-  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
+  gulp.watch('src/assets/js/**/*.*').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
