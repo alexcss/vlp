@@ -7,11 +7,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <meta name="description" content="">
+  <meta name="description" content="Магазин книжок та журналів">
   <meta name="theme-color" content="#ff5912">
 
   <meta property="og:title" content="Home" />
-  <meta property="og:description" content="" />
+  <meta property="og:description" content="Магазин книжок та журналів" />
   <meta property="og:image" content="" />
   <link rel="stylesheet" href="assets/css/app.css">
 
@@ -21,7 +21,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ff5912">
+
 </head>
 
 <body>
@@ -60,7 +60,7 @@
       				<button class="menu-icon dark hide-for-medium" type="button" data-open="offCanvas" aria-label="Show menu">
       				</button>
       				
-      				<a href="#">
+      				<a href="#" aria-label="Пошук">
       					<svg width="29" height="30">
       						<use xlink:href="#icon-search" />
       					</svg>
@@ -68,15 +68,15 @@
       						Пошук
       					</span>
       				</a>	
-      				<a href="#">
-      					<svg width="34" height="30">
+      				<a href="#" aria-label="Кошик">
+      					<svg width="34" height="30" >
       						<use xlink:href="#icon-cart" />
       					</svg>
       					<span class="show-for-medium">
       						Кошик
       					</span>
       				</a>	
-      				<a href="#">
+      				<a href="#" aria-label="Увійти">
       					<svg width="30" height="30">
       						<use xlink:href="#icon-user" />
       					</svg>
@@ -98,7 +98,8 @@
         
         			<form action="#" method="post">
         				<div class="input-group">
-        					<input required class="input-group-field" type="search" name="search">
+        					<label class="screen-reader" for="search-input">Поиск</label>
+        					<input id="search-input" required class="input-group-field" type="search" name="search">
         					<div class="input-group-button">
         					<button type="submit" class="hollow button button--icon secondary flex-container align-middle">
         							<svg width="29" height="30">
@@ -190,7 +191,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -216,7 +217,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -242,7 +243,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -268,7 +269,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -294,7 +295,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -320,7 +321,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -346,7 +347,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -372,7 +373,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -398,7 +399,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -424,7 +425,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -450,7 +451,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -476,7 +477,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -502,7 +503,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -528,7 +529,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -554,7 +555,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -580,7 +581,7 @@
         								<a class="ba-product-new__img-link" href="single.html">
         									<img src="assets/img/n11.jpg" alt="Управління дорожнім рухом на регульованих перехрестях у містах">
         								</a>
-        								<button type="submit" class="ba-product-new__add-to-cart">
+        								<button type="submit" class="ba-product-new__add-to-cart" title="Додати у кошик">
         									<svg width="55" height="50">
         										<use xlink:href="#icon-cart" />
         									</svg>
@@ -619,7 +620,7 @@
         		<div class="column small-12 medium-4">
         			<article class="ba-event">
         				<a href="#" class="ba-event__link">
-        					<img src="assets\img\event-img3.jpg" alt="Хай живуть канікули!">	
+        					<img src="assets/img/event-img3.jpg" srcset="assets/img/event-img3.jpg 1x, assets/img/event-img3.jpg 2x" alt="Хай живуть канікули!">	
         				</a>
         				<div class="ba-event__body">
         					<h3 class="ba-event__title">
@@ -638,7 +639,7 @@
         		<div class="column small-12 medium-4">
         			<article class="ba-event">
         				<a href="#" class="ba-event__link">
-        					<img src="assets\img\event-img3.jpg" alt="Хай живуть канікули!">	
+        					<img src="assets/img/event-img3.jpg" srcset="assets/img/event-img3.jpg 1x, assets/img/event-img3.jpg 2x" alt="Хай живуть канікули!">	
         				</a>
         				<div class="ba-event__body">
         					<h3 class="ba-event__title">
@@ -657,7 +658,7 @@
         		<div class="column small-12 medium-4">
         			<article class="ba-event">
         				<a href="#" class="ba-event__link">
-        					<img src="assets\img\event-img3.jpg" alt="Хай живуть канікули!">	
+        					<img src="assets/img/event-img3.jpg" srcset="assets/img/event-img3.jpg 1x, assets/img/event-img3.jpg 2x" alt="Хай живуть канікули!">	
         				</a>
         				<div class="ba-event__body">
         					<h3 class="ba-event__title">
@@ -713,7 +714,7 @@
       		<div class="column small-12 medium-4 ba-footer__col-3">
       			<ul class="menu vertical">
       				<li>
-      					<a href="#">
+      					<a href="#"  aria-label="Кошик">
       						<svg width="34" height="30">
       							<use xlink:href="#icon-cart" />
       						</svg>
@@ -723,7 +724,7 @@
       					</a>									
       				</li>
       				<li>
-      					<a href="#">
+      					<a href="#"  aria-label="Увійти">
       						<svg width="30" height="30">
       							<use xlink:href="#icon-user" />
       						</svg>
