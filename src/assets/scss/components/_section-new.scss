@@ -16,14 +16,66 @@
 	}
 
 	&__img{
-		display: block;
-		width: 100%;
-		object-fit: cover;
-
+		position: relative;
+		overflow: hidden;
 		@include breakpoint(medium){
 			width: 33.3%;
+			flex-shrink: 0;
+		}
+		img{
+			display: block;
+			width: 100%;
+			object-fit: cover;
+			height: 100%;
+
+			transition-property: opacity, transform;
+			transition-duration: 0.5s;
+			transform-origin: 50% 100%;
+		}
+
+		&:hover{
+			.ba-product-new__add-to-cart{
+				transform: translateY(0%);
+				svg{
+					transform: scale(1);
+				}
+			}
 		}
 	}
+	&__img-link{
+		display: block;
+		outline: 2px red solid;
+		height: 100%;
+		&:hover{
+			img{
+				opacity: 0.6;
+				transform: rotate(3deg) scale(1.2);
+			}
+		}
+	}
+	&__add-to-cart{
+		transition-property: transform;
+		transition-duration: 0.3s;
+		transform: translateY(100%);
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		background: rgba($primary-color, 0.9);
+		padding: 20px 22px;
+		margin-left: -50px;
+
+		svg{
+			// transition-property: transform;
+			// transition-duration: 0.3s;
+			// transform: scale(0);
+			// transition-delay: 0.3s;
+			// transition: transform 0.3s 0.3s;
+
+			animation: oleg 0.8s infinite;
+		}
+		
+	}
+
 	&__title{
 	}
 	&__info{
@@ -38,6 +90,18 @@
 	&__authors{
 		flex-grow: 1;
 	}	
+}
+
+@keyframes oleg{
+	0%{
+		transform: scale(1)
+	}
+	50%{
+		transform: scale(0.8)
+	}
+	100%{
+		transform: scale(1)
+	}
 }
 
 .ba-event{
